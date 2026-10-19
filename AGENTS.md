@@ -99,9 +99,12 @@ and the result labelled with the dead slug held Reid Hoffman's profile.
 
 ### The Bright Data CLI
 
-The LinkedIn pipelines are `linkedin_person_profile`, `linkedin_company_profile`,
-`linkedin_job_listings`, `linkedin_posts` and `linkedin_people_search`. There is
-no `linkedin_profiles`. Run `bdata pipelines list` rather than guessing a name.
+CLI 0.4.0 (12 Oct 2026) removed pipeline type names such as
+`linkedin_person_profile`: `bdata pipelines <type>` now exits 1. Run a scraper
+by dataset ID and method, `bdata pipelines run gd_l1viktl72bvl7bjuj0
+collect_by_url <url>`. Run `bdata pipelines search linkedin` rather than
+guessing an ID. The README block uses unpinned `npx`, so it always gets the
+newest CLI, whatever `live.yml` pins.
 
 ## The API stalls in waves
 
