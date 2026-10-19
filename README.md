@@ -385,13 +385,15 @@ once, or use `bdata login --device` over SSH and in CI:
 
 ```bash
 npx -p @brightdata/cli bdata login
-npx -p @brightdata/cli bdata pipelines linkedin_person_profile "https://www.linkedin.com/in/satyanadella/"
+npx -p @brightdata/cli bdata pipelines run gd_l1viktl72bvl7bjuj0 collect_by_url "https://www.linkedin.com/in/satyanadella/"
 ```
 
-`bdata pipelines list` prints every type. The LinkedIn ones are
-`linkedin_person_profile`, `linkedin_company_profile`, `linkedin_job_listings`,
-`linkedin_posts` and `linkedin_people_search`. Each takes URLs, prints JSON,
-and costs one credit per record.
+`bdata pipelines search linkedin` finds every scraper and its ID. The LinkedIn
+ones are people profiles `gd_l1viktl72bvl7bjuj0`, company information
+`gd_l1vikfnt1wgvvqz95w`, job listings `gd_lpfll7v5hcqtkxl6l`, posts
+`gd_lyy3tktm25m4avu764` and people search `gd_m8d03he47z8nwb5xc`. Each takes
+URLs with `collect_by_url`, prints JSON, and costs one credit per record.
+`bdata pipelines info <id>` lists a scraper's other methods.
 
 `npx skills add brightdata/skills` teaches Claude Code, Cursor and Codex these
 commands and the docs, so plain language works afterwards. Full guide:
