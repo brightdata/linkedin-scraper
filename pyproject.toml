@@ -7,7 +7,7 @@ name = "linkedin-scraper"
 version = "0.1.0"
 description = "LinkedIn scraper in Python: profiles, companies, jobs and posts as JSON, on the Bright Data LinkedIn Scraper API (Web Scraper API). No LinkedIn login, no browser. 5,000 free credits a month."
 readme = "README.md"
-license = { text = "MIT" }
+license = { text = "Apache-2.0" }
 requires-python = ">=3.10"
 dependencies = ["brightdata-sdk>=2.5.2,<3", "rich>=13,<16"]
 
@@ -18,7 +18,7 @@ dev = ["pytest>=8", "ruff>=0.6"]
 linkedin-scraper = "linkedin_scraper.__main__:main"
 
 [project.urls]
-Homepage = "https://github.com/brightdata/linkedin-scraper-python"
+Homepage = "https://github.com/brightdata/linkedin-scraper"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/linkedin_scraper"]

@@ -1,9 +1,9 @@
 [![Scrape LinkedIn data with the LinkedIn Scraper API: profiles, companies, jobs, posts. Collect or discover by URL, name and keyword. Start free.](.github/banner.png)](https://brightdata.com/products/web-scraper/linkedin?utm_source=github)
 
-# linkedin-scraper-python
+# linkedin-scraper
 
-[![Live check](https://github.com/brightdata/linkedin-scraper-python/actions/workflows/live.yml/badge.svg)](https://github.com/brightdata/linkedin-scraper-python/actions/workflows/live.yml)
-[![last verified](https://img.shields.io/badge/last%20verified-19%20Oct%202026-brightgreen)](https://github.com/brightdata/linkedin-scraper-python/actions/workflows/live.yml) <!-- verified: rewritten by the daily run -->
+[![Live check](https://github.com/brightdata/linkedin-scraper/actions/workflows/live.yml/badge.svg)](https://github.com/brightdata/linkedin-scraper/actions/workflows/live.yml)
+[![last verified](https://img.shields.io/badge/last%20verified-19%20Oct%202026-brightgreen)](https://github.com/brightdata/linkedin-scraper/actions/workflows/live.yml) <!-- verified: rewritten by the daily run -->
 
 [Quickstart](#quickstart) · [Command](#or-run-it-as-a-command) · [Endpoints](#the-rest-of-the-api) · [Data](#the-data) · [Errors](#when-it-fails) · [Coding agents](#coding-agents) · [Docs](https://docs.brightdata.com/products/scrapers/linkedin/introduction) · [Support](#support)
 
@@ -71,7 +71,7 @@ The command in this repo does the same for several profiles and writes one
 JSON file.
 
 ```bash
-pip install git+https://github.com/brightdata/linkedin-scraper-python
+pip install git+https://github.com/brightdata/linkedin-scraper
 linkedin-scraper satyanadella reidhoffman
 ```
 
@@ -413,11 +413,15 @@ Data connects to, from LangChain to Zapier and n8n:
 ## Support
 
 Bugs in this repo:
-[open an issue](https://github.com/brightdata/linkedin-scraper-python/issues), and
+[open an issue](https://github.com/brightdata/linkedin-scraper/issues), and
 [CONTRIBUTING.md](CONTRIBUTING.md) says what to put in it.
 Anything about the API, your account or your credits:
 [Bright Data support](https://brightdata.zendesk.com/hc/en-us/requests/new).
 
 ## License
 
-MIT.
+[Apache 2.0](LICENSE).
+
+## Node.js version
+
+The same LinkedIn scraper is available for Node.js: [brightdata/linkedin-scraper-node](https://github.com/brightdata/linkedin-scraper-node).
