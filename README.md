@@ -57,7 +57,7 @@ Satya Nadella | Chairman and CEO at Microsoft
 12173313 followers, 500 connections
 ```
 
-Expect under a minute: the API runs a job and the SDK waits for it. One
+Usually under a minute: the API runs a job and the SDK waits for it. One
 [credit](https://brightdata.com/pricing/web-scraper) per profile.
 
 Pass `auto_create_zones=False` every time. Left on, the SDK creates zones on
