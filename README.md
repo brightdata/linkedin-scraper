@@ -439,3 +439,11 @@ Anything about the API, your account or your credits:
 ## LinkedIn scraper for Node.js
 
 The same LinkedIn scraper is available for Node.js: [brightdata/linkedin-scraper-node](https://github.com/brightdata/linkedin-scraper-node).
+
+## More open source scrapers from Bright Data
+
+Other Python scrapers built the same way, with live-verified examples:
+
+- [Facebook scraper for Python](https://github.com/brightdata/facebook-scraper)
+- [Instagram scraper for Python](https://github.com/brightdata/instagram-scraper)
+- [ChatGPT scraper for Python](https://github.com/brightdata/chatgpt-scraper)
