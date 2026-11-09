@@ -1,9 +1,9 @@
-[![Scrape LinkedIn data with the LinkedIn Scraper API: profiles, companies, jobs, posts. Collect or discover by URL, name and keyword. Start free.](.github/banner.png)](https://brightdata.com/products/web-scraper/linkedin?utm_source=github)
+[![Scrape LinkedIn data with the LinkedIn Scraper API: profiles, companies, jobs, posts. Collect or discover by URL, name and keyword. Start free.](.github/banner.png)](https://brightdata.com/products/web-scraper/linkedin?utm_source=github&utm_medium=referral&utm_content=linkedin-scraper)
 
 # LinkedIn scraper for Python
 
 Scrape LinkedIn profiles, companies, jobs and posts to JSON with Python. No LinkedIn login, no browser.
-Built on the [Bright Data LinkedIn Scraper API](https://brightdata.com/products/web-scraper/linkedin?utm_source=github). New accounts get 5,000 free credits a month.
+Built on the [Bright Data LinkedIn Scraper API](https://brightdata.com/products/web-scraper/linkedin?utm_source=github&utm_medium=referral&utm_content=linkedin-scraper). New accounts get 5,000 free credits a month.
 
 [![Live check](https://github.com/brightdata/linkedin-scraper/actions/workflows/live.yml/badge.svg)](https://github.com/brightdata/linkedin-scraper/actions/workflows/live.yml)
 [![last verified](https://img.shields.io/badge/last%20verified-9%20Nov%202026-brightgreen)](https://github.com/brightdata/linkedin-scraper/actions/workflows/live.yml) <!-- verified: rewritten by the daily run -->
@@ -12,7 +12,7 @@ Built on the [Bright Data LinkedIn Scraper API](https://brightdata.com/products/
 
 LinkedIn profiles, companies, jobs and posts as JSON, in Python. No LinkedIn
 login, no browser. Built on the
-[Bright Data LinkedIn Scraper API](https://brightdata.com/products/web-scraper/linkedin?utm_source=github).
+[Bright Data LinkedIn Scraper API](https://brightdata.com/products/web-scraper/linkedin?utm_source=github&utm_medium=referral&utm_content=linkedin-scraper).
 
 Uses the [Bright Data Python SDK](https://github.com/brightdata/sdk-python).
 Full API docs:
