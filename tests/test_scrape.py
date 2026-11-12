@@ -290,3 +290,14 @@ def test_the_readme_names_no_pinned_job_url_which_would_expire():
     assert not re.search(r"linkedin\.com/jobs/view/\d+", readme), (
         "a pinned job URL turns red in CI the week the posting closes"
     )
+
+
+def test_a_url_on_another_host_is_not_a_profile():
+    assert clean_slug("linkedin.com/in/satyanadella") == "satyanadella"
+    for url in (
+        "https://evil.com/linkedin.com/in/satyanadella",
+        "https://linkedin.com.evil.com/in/satyanadella",
+        "https://notlinkedin.com/in/satyanadella",
+    ):
+        with pytest.raises(ValueError):
+            clean_slug(url)

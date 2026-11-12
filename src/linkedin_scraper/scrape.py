@@ -21,6 +21,7 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import SplitResult, urlsplit
 
 from brightdata import SyncBrightDataClient
 
@@ -30,11 +31,28 @@ TIMEOUT = 180
 _SLUG = re.compile(r"^[A-Za-z0-9\-_%.]{2,100}$")
 
 
+def _url_on(value: str, domain: str) -> SplitResult | None:
+    """value parsed as a URL, when its host is domain or a subdomain of it.
+
+    A substring test would let https://evil.com/linkedin.com/x through; the host is
+    what decides which site a URL names.
+    """
+    try:
+        url = urlsplit(value if "://" in value else f"https://{value}")
+        host = (url.hostname or "").lower()
+    except ValueError:
+        return None
+    return url if host == domain or host.endswith(f".{domain}") else None
+
+
 def clean_slug(value: str) -> str:
     """Accept satyanadella, a full profile URL, or one with a query string."""
     cleaned = (value or "").strip().split("?", 1)[0].split("#", 1)[0].rstrip("/")
-    if "linkedin.com/" in cleaned:
-        cleaned = cleaned.rsplit("/", 1)[-1]
+    if "/" in cleaned:
+        url = _url_on(cleaned, "linkedin.com")
+        if url is None:
+            raise ValueError(f"{value!r} is not a LinkedIn profile")
+        cleaned = url.path.rstrip("/").rsplit("/", 1)[-1]
     if not _SLUG.match(cleaned):
         raise ValueError(f"{value!r} is not a LinkedIn profile")
     return cleaned
