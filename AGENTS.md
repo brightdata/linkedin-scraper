@@ -119,9 +119,9 @@ wave: rerun it before looking for a code change.
 - `pytest` runs offline and needs no token. `ruff check .` must pass.
 - CI installs from the README's own commands on an empty machine. A weekly
   workflow executes every fenced block in the README against the real API, and
-  a daily one runs a smaller live check.
+  the same run also does a smaller live check.
 - The field table sits between `<!-- fields:start -->` and `<!-- fields:end -->`
-  and is regenerated daily. Do not edit it by hand.
-- The "last verified" badge line is rewritten by the daily run. Do not edit it.
+  and is regenerated weekly. Do not edit it by hand.
+- The "last verified" badge line is rewritten by the weekly run. Do not edit it.
 - Keep it small: 15 files and about 300 lines of Python. Do not add retries,
   deduplication, scheduling, databases, async examples or concurrency.

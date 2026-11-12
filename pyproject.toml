@@ -3,12 +3,23 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "linkedin-scraper"
-version = "0.1.0"
+name = "brightdata-linkedin-scraper"
+dynamic = ["version"]
 description = "LinkedIn scraper in Python: profiles, companies, jobs and posts as JSON, on the Bright Data LinkedIn Scraper API (Web Scraper API). No LinkedIn login, no browser. 5,000 free credits a month."
 readme = "README.md"
 license = { text = "Apache-2.0" }
 requires-python = ">=3.10"
+authors = [{ name = "Bright Data" }]
+keywords = ["linkedin", "linkedin-scraper", "scraper", "web-scraping", "bright-data", "linkedin-api", "profiles", "companies", "jobs"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Internet :: WWW/HTTP",
+]
 dependencies = ["brightdata-sdk>=2.5.2,<3", "rich>=13,<16"]
 
 [project.optional-dependencies]
@@ -19,6 +30,13 @@ linkedin-scraper = "linkedin_scraper.__main__:main"
 
 [project.urls]
 Homepage = "https://github.com/brightdata/linkedin-scraper"
+Documentation = "https://docs.brightdata.com/products/scrapers/linkedin/introduction"
+Source = "https://github.com/brightdata/linkedin-scraper"
+Issues = "https://github.com/brightdata/linkedin-scraper/issues"
+Changelog = "https://github.com/brightdata/linkedin-scraper/blob/main/CHANGELOG.md"
+
+[tool.hatch.version]
+path = "src/linkedin_scraper/__init__.py"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/linkedin_scraper"]

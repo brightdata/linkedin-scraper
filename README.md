@@ -1,4 +1,4 @@
-[![Scrape LinkedIn data with the LinkedIn Scraper API: profiles, companies, jobs, posts. Collect or discover by URL, name and keyword. Start free.](.github/banner.png)](https://brightdata.com/products/web-scraper/linkedin?utm_source=github&utm_medium=referral&utm_content=linkedin-scraper)
+[![Scrape LinkedIn data with the LinkedIn Scraper API: profiles, companies, jobs, posts. Collect or discover by URL, name and keyword. Start free.](https://raw.githubusercontent.com/brightdata/linkedin-scraper/main/.github/banner.png)](https://brightdata.com/products/web-scraper/linkedin?utm_source=github&utm_medium=referral&utm_content=linkedin-scraper)
 
 # LinkedIn scraper for Python
 
@@ -6,7 +6,7 @@ Scrape LinkedIn profiles, companies, jobs and posts to JSON with Python. No Link
 Built on the [Bright Data LinkedIn Scraper API](https://brightdata.com/products/web-scraper/linkedin?utm_source=github&utm_medium=referral&utm_content=linkedin-scraper). New accounts get 5,000 free credits a month.
 
 [![Live check](https://github.com/brightdata/linkedin-scraper/actions/workflows/live.yml/badge.svg)](https://github.com/brightdata/linkedin-scraper/actions/workflows/live.yml)
-[![last verified](https://img.shields.io/badge/last%20verified-11%20Nov%202026-brightgreen)](https://github.com/brightdata/linkedin-scraper/actions/workflows/live.yml) <!-- verified: rewritten by the daily run -->
+[![last verified](https://img.shields.io/badge/last%20verified-11%20Nov%202026-brightgreen)](https://github.com/brightdata/linkedin-scraper/actions/workflows/live.yml) <!-- verified: rewritten by the weekly run -->
 
 [Quickstart](#how-to-scrape-linkedin-data-with-python) · [No login](#scrape-linkedin-without-login) · [CLI](#bulk-linkedin-profile-scraper-cli) · [Endpoints](#scrape-linkedin-profiles-companies-jobs-and-posts) · [Data](#linkedin-profile-data-fields-json) · [Errors](#linkedin-scraper-errors) · [MCP and Claude Code](#linkedin-mcp-server-and-claude-code-skill) · [Free credits](#is-this-linkedin-scraper-free) · [Docs](https://docs.brightdata.com/products/scrapers/linkedin/introduction) · [Support](#support)
 
@@ -275,7 +275,7 @@ yourself with the same token. The table below does that.
 <details>
 <summary>All 47 fields, with type and description</summary>
 
-Regenerated every day from the dataset schema, via the raw metadata
+Regenerated every week from the dataset schema, via the raw metadata
 endpoint, so it cannot go stale. A
 profile carries the fields that apply to it: the sample file has 32
 of these 47, plus `timestamp` and `input`,
@@ -361,7 +361,7 @@ which the schema does not list.
 ```
 
 The whole file, one profile with every field, is
-[examples/sample_output.json](examples/sample_output.json).
+[examples/sample_output.json](https://github.com/brightdata/linkedin-scraper/blob/main/examples/sample_output.json).
 
 </details>
 
@@ -431,13 +431,13 @@ credits cover 5,000 profiles a month.
 
 Bugs in this repo:
 [open an issue](https://github.com/brightdata/linkedin-scraper/issues), and
-[CONTRIBUTING.md](CONTRIBUTING.md) says what to put in it.
+[CONTRIBUTING.md](https://github.com/brightdata/linkedin-scraper/blob/main/CONTRIBUTING.md) says what to put in it.
 Anything about the API, your account or your credits:
 [Bright Data support](https://brightdata.zendesk.com/hc/en-us/requests/new).
 
 ## License
 
-[Apache 2.0](LICENSE).
+[Apache 2.0](https://github.com/brightdata/linkedin-scraper/blob/main/LICENSE).
 
 ## LinkedIn scraper for Node.js
 
